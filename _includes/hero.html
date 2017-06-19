@@ -16,16 +16,9 @@
 		<span id="timerText"></span>
 		
 		<p>O dia está chegando... Fique por dentro!</p>
-		<p>
 		
-				<div class="clock"></div>
-
-		<script type="text/javascript">
-			var clock = $('.clock').FlipClock(3600);
-		</script>
 
 		
-		</p>
         </div>
 
     </div>
@@ -46,6 +39,18 @@
     <div class="overlay solid-overlay"></div>
     <div class="content-wrapper">
         <div class="col-lg-8 col-lg-offset-2 animated hiding" data-animation="fadeInUp" data-delay="0">
+				
+		
+		
+		
+		<div class="clock"></div>
+
+		<script type="text/javascript">
+			var clock = $('.clock').FlipClock(90000).setCountdown(true);
+		</script>
+		
+		
+
             <h3>{{ site.subscribeTitle }}</h3>
             <div id="mc_embed_signup" class="col-lg-8 col-sm-8 col-lg-offset-2 col-sm-offset-2">
                 <form action="{{site.subscribeAction}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
