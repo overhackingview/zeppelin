@@ -5,10 +5,13 @@
         <div class="animated hiding" data-animation="fadeInDown" data-delay="500">
             {% assign heroText = site.heroTitle | split:"<typeout>" %}
             <h1>{{ heroText[0] }}<span id="typeout-text" class="hidden-xs"></span><span class="typeout-fallback">{{ site.typeoutFallback }}</span>{{ heroText[1] }}</h1>
-            <p>Outubro 2017</p>
+		<p>O dia está chegando</p> <br/> <p>Fique por dentro!</p>
 
             
-                    <div class="col-lg-8 col-lg-offset-2 animated hiding" data-animation="fadeInUp" data-delay="0">
+
+		<div class="overlay solid-overlay"></div>
+    <div class="content-wrapper">
+        <div class="col-lg-8 col-lg-offset-2 animated hiding" data-animation="fadeInUp" data-delay="0">
             <h3>{{ site.subscribeTitle }}</h3>
             <div id="mc_embed_signup" class="col-lg-8 col-sm-8 col-lg-offset-2 col-sm-offset-2">
                 <form action="{{site.subscribeAction}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -33,8 +36,11 @@
                 </form>
                 <span class="subscribe-info">{{ site.subscribeInfo }}</span>
             </div>
-
-            
+        </div>
+    </div>
+		
+		
+		
             
         </div>
     </div>
