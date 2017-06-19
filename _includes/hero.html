@@ -9,7 +9,35 @@
 		
 		<script language="JavaScript">
 		
-		$("#DateCountdown").TimeCircles();
+		$("#DateCountdown").TimeCircles({
+		    "animation": "smooth",
+		    "bg_width": 1.2,
+		    "fg_width": 0.1,
+		    "circle_bg_color": "#60686F",
+		    "time": {
+			"Days": {
+			    "text": "Days",
+			    "color": "#3cba54",
+			    "show": true
+			},
+			"Hours": {
+			    "text": "Hours",
+			    "color": "#f4c20d",
+			    "show": true
+			},
+			"Minutes": {
+			    "text": "Minutes",
+			    "color": "#db3236",
+			    "show": true
+			},
+			"Seconds": {
+			    "text": "Seconds",
+			    "color": "#4885ed",
+			    "show": true
+			}
+		    }
+		});
+
 		
 		</script>
 		
