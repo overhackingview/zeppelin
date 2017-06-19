@@ -1,9 +1,4 @@
 <!-- Begin Hero Section -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/flipclock/0.7.7/flipclock.css">
-<script src="https://cdn.jsdelivr.net/flipclock/0.7.7/flipclock.min.js"></script>
-
 <section id="top-section-hero" class="top-section-hero top-section image-section" style="background-image: url('{{ site.baseurl }}/img/sections-background/{{ site.heroImage }}');">
     <div class="content-wrapper">
     <div class="jumbotron">
@@ -12,23 +7,53 @@
             <h1>{{ heroText[0] }}<span id="typeout-text" class="hidden-xs"></span><span class="typeout-fallback">{{ site.typeoutFallback }}</span>{{ heroText[1] }}</h1>
 
 		
-		<script language="JavaScript" src="//scripts.hashemian.com/js/countdown.js"></script>
+		<script language="JavaScript">
+		
+		$("#DateCountdown").TimeCircles({
+		    "animation": "smooth",
+		    "bg_width": 1.2,
+		    "fg_width": 0.1,
+		    "circle_bg_color": "#60686F",
+		    "time": {
+			"Days": {
+			    "text": "Days",
+			    "color": "#3cba54",
+			    "show": true
+			},
+			"Hours": {
+			    "text": "Hours",
+			    "color": "#f4c20d",
+			    "show": true
+			},
+			"Minutes": {
+			    "text": "Minutes",
+			    "color": "#db3236",
+			    "show": true
+			},
+			"Seconds": {
+			    "text": "Seconds",
+			    "color": "#4885ed",
+			    "show": true
+			}
+		    }
+		});
+		
+		</script>
 		<span id="timerText"></span>
 		
 		
 		
 		
-		<div class="clock" style="width: 50%; margin: 0 auto;"></div>
 
-		<script type="text/javascript">
-			var clock = $('.clock').FlipClock(90000).setCountdown(true);
-		</script>
-
+		
+		
+		
 		
 		
 		
 		<p>O dia está chegando... Fique por dentro!</p>
-		
+		<div id="DateCountdown" data-date="2017-10-01 00:00:00" style="width: 100%;"></div>
+
 
 		
         </div>
